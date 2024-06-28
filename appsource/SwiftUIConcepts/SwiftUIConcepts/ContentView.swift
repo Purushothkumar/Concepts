@@ -9,29 +9,26 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @State private var products: [Product] = []
-    @ObservedObject var contentViewModel = ContentViewModel()
+//    @State private var products: [Product] = []
+//    @ObservedObject var contentViewModel = ContentViewModel()
 
     var body: some View {
         NavigationView{
-            List(contentViewModel.posts) { post in
-                VStack(alignment: .leading) {
-                    Text(post.title)
-                        .font(.headline)
-                    Text(post.body)
-                        .font(.subheadline)
-                }
-                .padding()
-            }
-            .onAppear {
-                contentViewModel.fetchProducts()
-            }
+            Text("dmfnsjdjfks")
+                .font(.largeTitle)
+                .fontWeight(.bold)
+                
         }
-               .navigationTitle("Posts")
+        .navigationTitle("home")
     }
     
 }
 
 #Preview {
     ContentView()
+}
+
+class ContentViewModel{
+
+
 }

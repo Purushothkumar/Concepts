@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F02634B42C2BDC58006CFEC8 /* SerialConcurrentQueue.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SerialConcurrentQueue.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F09FC78E2C297DD700D88866 /* SwiftUIConcepts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIConcepts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F09FC7912C297DD700D88866 /* SwiftUIConceptsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConceptsApp.swift; sourceTree = "<group>"; };
 		F09FC7932C297DD700D88866 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +76,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F02634B22C2BD79B006CFEC8 /* playground */ = {
+			isa = PBXGroup;
+			children = (
+				F02634B42C2BDC58006CFEC8 /* SerialConcurrentQueue.playground */,
+			);
+			path = playground;
+			sourceTree = "<group>";
+		};
 		F09FC7852C297DD700D88866 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +107,7 @@
 		F09FC7902C297DD700D88866 /* SwiftUIConcepts */ = {
 			isa = PBXGroup;
 			children = (
+				F02634B22C2BD79B006CFEC8 /* playground */,
 				F09FC7BE2C2986CB00D88866 /* Model */,
 				F09FC7BB2C297E4F00D88866 /* NetworkManager */,
 				F09FC7912C297DD700D88866 /* SwiftUIConceptsApp.swift */,
