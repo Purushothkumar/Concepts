@@ -13,9 +13,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     var session: URLSession!
 
-    private  init(){
-        session = URLSession(configuration: .default, delegate: nil, delegateQueue: nil)
-    }
+    private  init(){}
 
     func request<T: Decodable>(url:URL? ,expectingtype: T,completion: @escaping(_ data: T? , _ error: Error?)->()){
 

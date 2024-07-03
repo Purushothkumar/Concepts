@@ -14,12 +14,13 @@ struct ContentView: View {
 
     var body: some View {
         NavigationView{
-            Text("dmfnsjdjfks")
-                .font(.largeTitle)
+            Text("-0zhfvhdfbhvbsdhbhbfasdhj")
+                .font(.headline)
                 .fontWeight(.bold)
+                .foregroundColor(Color.green)
                 
         }
-        .navigationTitle("home")
+        .navigationTitle("sjkdacbvnnbdsckjvbd")
     }
     
 }
