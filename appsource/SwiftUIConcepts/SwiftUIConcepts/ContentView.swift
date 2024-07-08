@@ -18,11 +18,9 @@ struct ContentView: View {
                 .font(.headline)
                 .fontWeight(.bold)
                 .foregroundColor(Color.green)
-                
+
         }
-        .navigationTitle("sjkdacbvnnbdsckjvbd")
     }
-    
 }
 
 #Preview {
