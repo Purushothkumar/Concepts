@@ -11,6 +11,7 @@ struct ViewVC: View {
 
     var body: some View {
         ZStack{
+            Color.accentColor.edgesIgnoringSafeArea(.all)
             contentLayer
         }
     }
