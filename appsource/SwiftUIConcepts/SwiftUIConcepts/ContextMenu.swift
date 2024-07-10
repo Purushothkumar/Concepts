@@ -23,6 +23,11 @@ Chennai - 600041
         }.foregroundColor(.white)
             .padding(30)
             .background(backgroundColor.cornerRadius(30))
+            .contextMenu(menuItems: {
+                Text("Menu Item 1")
+                Text("Menu Item 2")
+                Text("Menu Item 3")
+            })
     }
 }
 
