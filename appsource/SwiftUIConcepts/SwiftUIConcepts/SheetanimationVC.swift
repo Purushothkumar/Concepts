@@ -12,11 +12,17 @@ struct SheetanimationVC: View {
     var body: some View {
         ZStack(alignment: .center, content: {
             Color.pink.edgesIgnoringSafeArea(.all)
-            Button(action: {showVC.toggle()}, label: {
-                Image(systemName: "")
+            Button(action: {
+                showVC.toggle()
+            }, label: {
+                Image(systemName: "folder")
+                    .font(.largeTitle)
+                    .foregroundColor(.white)
             })
-
-        }
+            .sheet(isPresented: $showVC, content: {
+                NewSheetanimationVC()
+            })
+        })
     }
 }
 
@@ -25,7 +31,18 @@ struct SheetanimationVC: View {
 }
 
 struct NewSheetanimationVC: View {
+    @Environment(\.presentationMode) var presentationMode
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .topLeading, content: {
+            Color.yellow.edgesIgnoringSafeArea(.all)
+
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Image(systemName: "xmark").font(.largeTitle)
+                    .foregroundColor(.white)
+                    .padding(20)
+            })
+        })
     }
 }
