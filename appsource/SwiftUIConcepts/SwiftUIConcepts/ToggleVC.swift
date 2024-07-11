@@ -8,8 +8,33 @@
 import SwiftUI
 
 struct ToggleVC: View {
+    @State var toggle = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+            Color.blue
+
+            VStack{
+                HStack{
+                    Text("CurrentStatus : ")
+                    Text(toggle ? "Online" : "Offline")
+
+                }
+                Toggle(isOn: $toggle, label: {
+                    HStack {
+                        Text("Change Status").padding()
+                        Image(systemName: "fibrechannel")
+                    }
+                })
+
+
+                    .toggleStyle(SwitchToggleStyle(tint: .green))
+
+                Spacer()
+
+
+            } .foregroundColor(.white)
+                .padding()
+        }
     }
 }
 
