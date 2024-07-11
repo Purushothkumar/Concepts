@@ -35,6 +35,7 @@
 		F0D7BC9B2C3F99B50034779C /* TextfieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BC9A2C3F99B50034779C /* TextfieldVC.swift */; };
 		F0D7BC9D2C3FA2FE0034779C /* TextEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BC9C2C3FA2FE0034779C /* TextEditorVC.swift */; };
 		F0D7BC9F2C3FB7D00034779C /* ToggleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BC9E2C3FB7D00034779C /* ToggleVC.swift */; };
+		F0D7BCA12C3FBB1E0034779C /* PickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BCA02C3FBB1E0034779C /* PickerVC.swift */; };
 		F0F6A8322C3CFAD6002BD693 /* StateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6A8312C3CFAD6002BD693 /* StateVC.swift */; };
 		F0F6A8342C3D0845002BD693 /* ViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6A8332C3D0845002BD693 /* ViewVC.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 		F0D7BC9A2C3F99B50034779C /* TextfieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldVC.swift; sourceTree = "<group>"; };
 		F0D7BC9C2C3FA2FE0034779C /* TextEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorVC.swift; sourceTree = "<group>"; };
 		F0D7BC9E2C3FB7D00034779C /* ToggleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleVC.swift; sourceTree = "<group>"; };
+		F0D7BCA02C3FBB1E0034779C /* PickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerVC.swift; sourceTree = "<group>"; };
 		F0F6A8312C3CFAD6002BD693 /* StateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVC.swift; sourceTree = "<group>"; };
 		F0F6A8332C3D0845002BD693 /* ViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +197,7 @@
 				F0D7BC9A2C3F99B50034779C /* TextfieldVC.swift */,
 				F0D7BC9C2C3FA2FE0034779C /* TextEditorVC.swift */,
 				F0D7BC9E2C3FB7D00034779C /* ToggleVC.swift */,
+				F0D7BCA02C3FBB1E0034779C /* PickerVC.swift */,
 				F09FC7952C297DD800D88866 /* Assets.xcassets */,
 				F09FC7972C297DD800D88866 /* Preview Content */,
 			);
@@ -374,6 +377,7 @@
 			files = (
 				F0D11F092C3E4EC7001C866E /* navigationVC.swift in Sources */,
 				F09FC7BD2C297E6200D88866 /* NetworkManager.swift in Sources */,
+				F0D7BCA12C3FBB1E0034779C /* PickerVC.swift in Sources */,
 				F0D7BC9B2C3F99B50034779C /* TextfieldVC.swift in Sources */,
 				F09FC7942C297DD700D88866 /* ContentView.swift in Sources */,
 				F0F6A8322C3CFAD6002BD693 /* StateVC.swift in Sources */,

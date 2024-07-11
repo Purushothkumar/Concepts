@@ -12,12 +12,12 @@ struct ToggleVC: View {
     var body: some View {
         ZStack{
             Color.blue
-
+            
             VStack{
                 HStack{
                     Text("CurrentStatus : ")
                     Text(toggle ? "Online" : "Offline")
-
+                    
                 }
                 Toggle(isOn: $toggle, label: {
                     HStack {
@@ -25,13 +25,8 @@ struct ToggleVC: View {
                         Image(systemName: "fibrechannel")
                     }
                 })
-
-
-                    .toggleStyle(SwitchToggleStyle(tint: .green))
-
+                .toggleStyle(SwitchToggleStyle(tint: .green))
                 Spacer()
-
-
             } .foregroundColor(.white)
                 .padding()
         }
