@@ -32,7 +32,7 @@ struct StepperVC: View {
     func changevalue(change:CGFloat){
             withAnimation(.easeIn) {
                 widthvalue += change
-            
+
         }
     }
 }
