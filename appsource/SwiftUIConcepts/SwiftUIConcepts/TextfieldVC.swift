@@ -29,7 +29,7 @@ struct TextfieldVC: View {
                         }.background(Color.white)
                             .padding()
                             .padding(10)
-//                            .disabled(textfieldtext.isEmpty ? true : false)
+//                            .disabled(textfieldtext.isEmpty ? true :  false)
 
                         ForEach(arraytext, id: \.self) { data in
                             Text(data)

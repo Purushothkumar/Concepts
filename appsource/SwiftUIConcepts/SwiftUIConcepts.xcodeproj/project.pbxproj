@@ -33,6 +33,8 @@
 		F0D284382C3C09520009CFB7 /* SafeAreaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D284372C3C09520009CFB7 /* SafeAreaVC.swift */; };
 		F0D2843A2C3C0EE10009CFB7 /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D284392C3C0EE10009CFB7 /* ButtonVC.swift */; };
 		F0D7BC9B2C3F99B50034779C /* TextfieldVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BC9A2C3F99B50034779C /* TextfieldVC.swift */; };
+		F0D7BC9D2C3FA2FE0034779C /* TextEditorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BC9C2C3FA2FE0034779C /* TextEditorVC.swift */; };
+		F0D7BC9F2C3FB7D00034779C /* ToggleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BC9E2C3FB7D00034779C /* ToggleVC.swift */; };
 		F0F6A8322C3CFAD6002BD693 /* StateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6A8312C3CFAD6002BD693 /* StateVC.swift */; };
 		F0F6A8342C3D0845002BD693 /* ViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6A8332C3D0845002BD693 /* ViewVC.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,8 @@
 		F0D284372C3C09520009CFB7 /* SafeAreaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaVC.swift; sourceTree = "<group>"; };
 		F0D284392C3C0EE10009CFB7 /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
 		F0D7BC9A2C3F99B50034779C /* TextfieldVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldVC.swift; sourceTree = "<group>"; };
+		F0D7BC9C2C3FA2FE0034779C /* TextEditorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorVC.swift; sourceTree = "<group>"; };
+		F0D7BC9E2C3FB7D00034779C /* ToggleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleVC.swift; sourceTree = "<group>"; };
 		F0F6A8312C3CFAD6002BD693 /* StateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVC.swift; sourceTree = "<group>"; };
 		F0F6A8332C3D0845002BD693 /* ViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -189,6 +193,8 @@
 				F0D11F122C3E7A00001C866E /* ActionSheetVC.swift */,
 				F0D11F162C3E903F001C866E /* ContextMenu.swift */,
 				F0D7BC9A2C3F99B50034779C /* TextfieldVC.swift */,
+				F0D7BC9C2C3FA2FE0034779C /* TextEditorVC.swift */,
+				F0D7BC9E2C3FB7D00034779C /* ToggleVC.swift */,
 				F09FC7952C297DD800D88866 /* Assets.xcassets */,
 				F09FC7972C297DD800D88866 /* Preview Content */,
 			);
@@ -375,6 +381,7 @@
 				F0D2843A2C3C0EE10009CFB7 /* ButtonVC.swift in Sources */,
 				F0D284302C3BFC790009CFB7 /* ForEachBootcamp.swift in Sources */,
 				F01BAEEA2C3D541C009D6289 /* TransistionVC.swift in Sources */,
+				F0D7BC9F2C3FB7D00034779C /* ToggleVC.swift in Sources */,
 				F0D284382C3C09520009CFB7 /* SafeAreaVC.swift in Sources */,
 				F01BAEEE2C3D60BF009D6289 /* SheetanimationVC.swift in Sources */,
 				F0D11F132C3E7A00001C866E /* ActionSheetVC.swift in Sources */,
@@ -384,6 +391,7 @@
 				F0D11F0F2C3E749A001C866E /* AlertVC.swift in Sources */,
 				F01BAEEC2C3D5B7A009D6289 /* SheetVC.swift in Sources */,
 				F01BAEE52C3D341A009D6289 /* IfelseVC.swift in Sources */,
+				F0D7BC9D2C3FA2FE0034779C /* TextEditorVC.swift in Sources */,
 				F0D284322C3BFF150009CFB7 /* ScrollViewVC.swift in Sources */,
 				F01BAEE72C3D3CF0009D6289 /* AnimationVC.swift in Sources */,
 				F0D11F172C3E903F001C866E /* ContextMenu.swift in Sources */,
