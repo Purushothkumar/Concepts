@@ -11,6 +11,23 @@ struct PageVC: View {
     @State var selectedtab = 0
 //    @State var backgroundcolor = Color.blue
 
+    var body: some View {
+
+        TabView {
+            RoundedRectangle(cornerRadius: 25.0).foregroundColor(.blue)
+            RoundedRectangle(cornerRadius: 25.0)
+            RoundedRectangle(cornerRadius: 25.0).foregroundColor(.red)
+
+        }
+        .tabViewStyle(PageTabViewStyle())
+        .frame(height: 300)
+    }
+}
+
+struct PageIconVC: View {
+    @State var selectedtab = 0
+    //    @State var backgroundcolor = Color.blue
+
     let icons = ["house","heart","person"]
 
     var body: some View {
@@ -26,7 +43,8 @@ struct PageVC: View {
     }
 }
 
+
 #Preview {
-    PageVC()
+    PageIconVC ()
 }
 
