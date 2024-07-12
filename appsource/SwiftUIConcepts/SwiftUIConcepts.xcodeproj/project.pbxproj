@@ -22,6 +22,7 @@
 		F09FC7AF2C297DD800D88866 /* SwiftUIConceptsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FC7AE2C297DD800D88866 /* SwiftUIConceptsUITestsLaunchTests.swift */; };
 		F09FC7BD2C297E6200D88866 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FC7BC2C297E6200D88866 /* NetworkManager.swift */; };
 		F09FC7C02C2986DD00D88866 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FC7BF2C2986DD00D88866 /* ProductModel.swift */; };
+		F0C800D82C40EF750091EBFC /* OnAppearVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C800D72C40EF750091EBFC /* OnAppearVC.swift */; };
 		F0D11F092C3E4EC7001C866E /* navigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D11F082C3E4EC7001C866E /* navigationVC.swift */; };
 		F0D11F0B2C3E6406001C866E /* ListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D11F0A2C3E6406001C866E /* ListVC.swift */; };
 		F0D11F0F2C3E749A001C866E /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D11F0E2C3E749A001C866E /* AlertVC.swift */; };
@@ -85,6 +86,7 @@
 		F09FC7AE2C297DD800D88866 /* SwiftUIConceptsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConceptsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F09FC7BC2C297E6200D88866 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F09FC7BF2C2986DD00D88866 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		F0C800D72C40EF750091EBFC /* OnAppearVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearVC.swift; sourceTree = "<group>"; };
 		F0D11F082C3E4EC7001C866E /* navigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationVC.swift; sourceTree = "<group>"; };
 		F0D11F0A2C3E6406001C866E /* ListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListVC.swift; sourceTree = "<group>"; };
 		F0D11F0E2C3E749A001C866E /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				F0D7BCA82C3FEE030034779C /* StepperVC.swift */,
 				F0D7BCAE2C3FF5E20034779C /* TABVC.swift */,
 				F0D7BCB02C40015F0034779C /* PageVC.swift */,
+				F0C800D72C40EF750091EBFC /* OnAppearVC.swift */,
 				F09FC7952C297DD800D88866 /* Assets.xcassets */,
 				F09FC7972C297DD800D88866 /* Preview Content */,
 			);
@@ -403,6 +406,7 @@
 				F09FC7942C297DD700D88866 /* ContentView.swift in Sources */,
 				F0F6A8322C3CFAD6002BD693 /* StateVC.swift in Sources */,
 				F0D7BCAF2C3FF5E20034779C /* TABVC.swift in Sources */,
+				F0C800D82C40EF750091EBFC /* OnAppearVC.swift in Sources */,
 				F09FC7922C297DD700D88866 /* SwiftUIConceptsApp.swift in Sources */,
 				F0D2843A2C3C0EE10009CFB7 /* ButtonVC.swift in Sources */,
 				F0D284302C3BFC790009CFB7 /* ForEachBootcamp.swift in Sources */,
