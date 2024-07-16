@@ -11,11 +11,11 @@ struct FruitModel:Identifiable{
     var id:String
     var count: Int
     var name: String
-    init(id:String, count: Int, name: String) {
-        self.id = id
-        self.count = count
-        self.name = name
-    }
+//    init(id:String, count: Int, name: String) {
+//        self.id = id
+//        self.count = count
+//        self.name = name
+//    }
 }
 
 
@@ -32,7 +32,8 @@ class FruitViewModel: ObservableObject  {
         let fruit3 = FruitModel(id: UUID().uuidString, count: 8, name: "watermelon")
         let fruit4 = FruitModel(id: UUID().uuidString, count: 21, name: "jack")
         isLoading = true
-        DispatchQueue.main.asyncAfter(deadline: .now() + 5){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1){
+
             self.fruitArray.append(fruit1)
             self.fruitArray.append(fruit2)
             self.fruitArray.append(fruit3)
@@ -51,7 +52,9 @@ struct ViewModelVC: View {
 //    @State var fruitArray:[FruitModel] = [
 //        FruitModel(id: UUID().uuidString, count: 5, name: "APPLE"),
 //        FruitModel(id: UUID().uuidString, count: 10, name: "BANANA")]
-    @ObservedObject var fruitViewModel:FruitViewModel = FruitViewModel()
+//    @ObservedObject var fruitViewModel:FruitViewModel = FruitViewModel()
+    @StateObject var fruitViewModel:FruitViewModel = FruitViewModel()
+
     
     var body: some View {
         NavigationView {
@@ -60,22 +63,43 @@ struct ViewModelVC: View {
                     ProgressView()
                 }
                 else{
-                ForEach(fruitViewModel.fruitArray) { fruit in                  VStack(alignment: .leading, content: {
-                    HStack{
-                        Text("\(fruit.count)").foregroundColor(.blue).font(.largeTitle)
-                        
-                        Text(fruit.name).font(.title)
-                    }
-                    Text(fruit.id)
+                    ForEach(fruitViewModel.fruitArray) { fruit in                  VStack(alignment: .leading, content: {
+                        HStack{
+                            Text("\(fruit.count)").foregroundColor(.blue).font(.largeTitle)
+                            
+                            Text(fruit.name).font(.title)
+                        }
+                        Text(fruit.id)
                     })
-                }.onDelete(perform: fruitViewModel.deletefruit)
-            }}.navigationTitle("FRUIT LIST")
+                    }.onDelete(perform: fruitViewModel.deletefruit)
+                }
+            }.navigationTitle("FRUIT LIST")
+                .navigationBarItems(leading: NavigationLink("Navigate", destination: {
+                    SeconViewModel()
+                }))
         }.onAppear{
             fruitViewModel.getFruits()
         }
     }
     
 }
+
+struct SeconViewModel:View {
+    @Environment(\.presentationMode) var presentationMode
+    var body: some View {
+        ZStack{
+            Color.green.ignoresSafeArea()
+            
+            Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            }, label: {
+                Text("Back").font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.white)
+            })
+        }
+    }
+}
+
 
 #Preview {
     ViewModelVC()
