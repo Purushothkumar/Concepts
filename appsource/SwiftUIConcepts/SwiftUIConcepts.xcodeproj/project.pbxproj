@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5EBBFB42C462F4F00058D1F /* ViewModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5EBBFB32C462F4F00058D1F /* ViewModelVC.swift */; };
 		F01BAEE32C3D29D9009D6289 /* BindingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01BAEE22C3D29D9009D6289 /* BindingVC.swift */; };
 		F01BAEE52C3D341A009D6289 /* IfelseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01BAEE42C3D341A009D6289 /* IfelseVC.swift */; };
 		F01BAEE72C3D3CF0009D6289 /* AnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01BAEE62C3D3CF0009D6289 /* AnimationVC.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5EBBFB32C462F4F00058D1F /* ViewModelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelVC.swift; sourceTree = "<group>"; };
 		F01BAEE22C3D29D9009D6289 /* BindingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingVC.swift; sourceTree = "<group>"; };
 		F01BAEE42C3D341A009D6289 /* IfelseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfelseVC.swift; sourceTree = "<group>"; };
 		F01BAEE62C3D3CF0009D6289 /* AnimationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationVC.swift; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				F0D7BCB02C40015F0034779C /* PageVC.swift */,
 				F0C800D72C40EF750091EBFC /* OnAppearVC.swift */,
 				F0C800DB2C412BC00091EBFC /* TapGestureVC.swift */,
+				C5EBBFB32C462F4F00058D1F /* ViewModelVC.swift */,
 				F09FC7952C297DD800D88866 /* Assets.xcassets */,
 				F09FC7972C297DD800D88866 /* Preview Content */,
 			);
@@ -418,6 +421,7 @@
 				F0D284382C3C09520009CFB7 /* SafeAreaVC.swift in Sources */,
 				F01BAEEE2C3D60BF009D6289 /* SheetanimationVC.swift in Sources */,
 				F0D11F132C3E7A00001C866E /* ActionSheetVC.swift in Sources */,
+				C5EBBFB42C462F4F00058D1F /* ViewModelVC.swift in Sources */,
 				F0D7BCA52C3FC8190034779C /* ColorPickerVC.swift in Sources */,
 				F0D11F0B2C3E6406001C866E /* ListVC.swift in Sources */,
 				F0F6A8342C3D0845002BD693 /* ViewVC.swift in Sources */,
