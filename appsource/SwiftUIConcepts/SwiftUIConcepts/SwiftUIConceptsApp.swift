@@ -12,7 +12,7 @@ struct SwiftUIConceptsApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ViewVC()
+            AppStorageVC()
         }
     }
 }
