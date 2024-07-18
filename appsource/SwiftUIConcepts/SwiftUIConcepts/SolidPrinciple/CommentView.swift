@@ -16,16 +16,19 @@ struct CommentView: View {
         NavigationView {
             VStack {
                 List {
-                    ForEach(viewModel.comments) { comment in
+                    ForEach(viewModel.users) { comment in
                         HStack(alignment: .top,spacing: 10){
                             let id = comment.id != nil ? "\(String(describing: comment.id!))" : "No ID"
                             Text(id).font(.title).foregroundColor(.red)
-                            Text(comment.name ?? "No Comments").font(.title).foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        }
+                            VStack(alignment: .leading,spacing: 5) {
+                                Text(comment.name ?? "No Name").font(.title).foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                                Text(comment.email ?? "No Email").font(.title).foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                            }
+                        }.padding(10)
                     }
                 }
             }.onAppear(perform: {
-                viewModel.fetchComments()
+                viewModel.fetchUsers()
             })
             .navigationTitle("Comment List")
         }
