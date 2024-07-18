@@ -18,6 +18,13 @@ enum APIError: Error{
 
 
 class NetworkManager{
+    let aPIHandler: APIHandler
+    let responseHandler: ResponseHandler
+    init(aPIHandler: APIHandler = APIHandler(), responseHandler: ResponseHandler = ResponseHandler()) {
+        self.aPIHandler = aPIHandler
+        self.responseHandler = responseHandler
+    }
+
     func fetchRequest(completion: @escaping(Result<[CommentModel], APIError>) -> Void){
         // URL
         guard let url = URL(string: APIURL.fetchComments) else{
@@ -25,12 +32,40 @@ class NetworkManager{
             return completion(.failure(.BadURLError))
         }
         // API Handler
+        aPIHandler.fetchReponse(url: url) { result in
+            switch result {
+            case .success(let data):
+                    print(data)
+                self.responseHandler.fetchRequest(data: data) { decodedReponse in
+                    switch decodedReponse {
+                    case .success(let model):
+                        completion(.success(model))
+                    case .failure(let error):
+                        completion(.failure(error))
+                    }
+                }
+            case .failure(let error):
+                    print(error)
+            }
+        }
+    }
+}
 
+// API Handler
+class APIHandler{
+    func fetchReponse(url:URL,completion: @escaping(Result<Data, APIError>) -> Void){
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else{
                 print("NoResponseError")
                 return completion(.failure(.NoResponseError))
             }
+            completion(.success(data))
+        }.resume()
+    }
+}
+// Response Handler
+class ResponseHandler{
+    func fetchRequest(data:Data, completion: @escaping(Result<[CommentModel], APIError>) -> Void){
             // Response Handler
             let commonResponse = try? JSONDecoder().decode([CommentModel].self, from: data)
             if let newResponse = commonResponse {
@@ -40,13 +75,8 @@ class NetworkManager{
                 print("DecodingError")
                 return completion(.failure(.DecodingError))
             }
-        }.resume()
     }
-
 }
-
-
-
 
 
 
