@@ -47,6 +47,15 @@
 		F0D7BCAD2C3FF19E0034779C /* SliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BCAC2C3FF19E0034779C /* SliderVC.swift */; };
 		F0D7BCAF2C3FF5E20034779C /* TABVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BCAE2C3FF5E20034779C /* TABVC.swift */; };
 		F0D7BCB12C40015F0034779C /* PageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D7BCB02C40015F0034779C /* PageVC.swift */; };
+		F0DFEF8A2C477BF1008882DD /* FocusPointVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DFEF892C477BF1008882DD /* FocusPointVC.swift */; };
+		F0F179572C48D67100288F0C /* CommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F179562C48D67100288F0C /* CommentView.swift */; };
+		F0F1795B2C48D8CE00288F0C /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1795A2C48D8CE00288F0C /* CommentModel.swift */; };
+		F0F1795D2C48D8EE00288F0C /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1795C2C48D8EE00288F0C /* CommentViewModel.swift */; };
+		F0F1795F2C48FA3D00288F0C /* CommonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1795E2C48FA3D00288F0C /* CommonService.swift */; };
+		F0F179612C49025700288F0C /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F179602C49025700288F0C /* UserModel.swift */; };
+		F0F179632C49100B00288F0C /* DataBaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F179622C49100B00288F0C /* DataBaseHandler.swift */; };
+		F0F1796A2C49111A00288F0C /* Comment.json in Resources */ = {isa = PBXBuildFile; fileRef = F0F179692C49111A00288F0C /* Comment.json */; };
+		F0F1796C2C4925DD00288F0C /* APIURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F1796B2C4925DD00288F0C /* APIURL.swift */; };
 		F0F6A8322C3CFAD6002BD693 /* StateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6A8312C3CFAD6002BD693 /* StateVC.swift */; };
 		F0F6A8342C3D0845002BD693 /* ViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6A8332C3D0845002BD693 /* ViewVC.swift */; };
 /* End PBXBuildFile section */
@@ -115,6 +124,15 @@
 		F0D7BCAC2C3FF19E0034779C /* SliderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderVC.swift; sourceTree = "<group>"; };
 		F0D7BCAE2C3FF5E20034779C /* TABVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TABVC.swift; sourceTree = "<group>"; };
 		F0D7BCB02C40015F0034779C /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
+		F0DFEF892C477BF1008882DD /* FocusPointVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusPointVC.swift; sourceTree = "<group>"; };
+		F0F179562C48D67100288F0C /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
+		F0F1795A2C48D8CE00288F0C /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		F0F1795C2C48D8EE00288F0C /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		F0F1795E2C48FA3D00288F0C /* CommonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonService.swift; sourceTree = "<group>"; };
+		F0F179602C49025700288F0C /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		F0F179622C49100B00288F0C /* DataBaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseHandler.swift; sourceTree = "<group>"; };
+		F0F179692C49111A00288F0C /* Comment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Comment.json; sourceTree = "<group>"; };
+		F0F1796B2C4925DD00288F0C /* APIURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIURL.swift; sourceTree = "<group>"; };
 		F0F6A8312C3CFAD6002BD693 /* StateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateVC.swift; sourceTree = "<group>"; };
 		F0F6A8332C3D0845002BD693 /* ViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -192,45 +210,13 @@
 		F09FC7902C297DD700D88866 /* SwiftUIConcepts */ = {
 			isa = PBXGroup;
 			children = (
+				F0F179552C48D2D600288F0C /* SolidPrinciple */,
 				F08B88132C2EE15300E1986D /* SwiftUIConcepts.entitlements */,
 				F02634B22C2BD79B006CFEC8 /* playground */,
 				F09FC7BE2C2986CB00D88866 /* Model */,
 				F09FC7BB2C297E4F00D88866 /* NetworkManager */,
 				F09FC7912C297DD700D88866 /* SwiftUIConceptsApp.swift */,
-				F0D2842F2C3BFC790009CFB7 /* ForEachBootcamp.swift */,
-				F0D284312C3BFF150009CFB7 /* ScrollViewVC.swift */,
-				F09FC7932C297DD700D88866 /* ContentView.swift */,
-				F0D284352C3C04710009CFB7 /* GridViewVC.swift */,
-				F0D284372C3C09520009CFB7 /* SafeAreaVC.swift */,
-				F0D284392C3C0EE10009CFB7 /* ButtonVC.swift */,
-				F0F6A8312C3CFAD6002BD693 /* StateVC.swift */,
-				F0F6A8332C3D0845002BD693 /* ViewVC.swift */,
-				F01BAEE22C3D29D9009D6289 /* BindingVC.swift */,
-				F01BAEE42C3D341A009D6289 /* IfelseVC.swift */,
-				F01BAEE62C3D3CF0009D6289 /* AnimationVC.swift */,
-				F01BAEE92C3D541C009D6289 /* TransistionVC.swift */,
-				F01BAEEB2C3D5B7A009D6289 /* SheetVC.swift */,
-				F01BAEED2C3D60BF009D6289 /* SheetanimationVC.swift */,
-				F0D11F082C3E4EC7001C866E /* navigationVC.swift */,
-				F0D11F0A2C3E6406001C866E /* ListVC.swift */,
-				F0D11F0E2C3E749A001C866E /* AlertVC.swift */,
-				F0D11F122C3E7A00001C866E /* ActionSheetVC.swift */,
-				F0D11F162C3E903F001C866E /* ContextMenu.swift */,
-				F0D7BC9A2C3F99B50034779C /* TextfieldVC.swift */,
-				F0D7BC9C2C3FA2FE0034779C /* TextEditorVC.swift */,
-				F0D7BC9E2C3FB7D00034779C /* ToggleVC.swift */,
-				F0D7BCA02C3FBB1E0034779C /* PickerVC.swift */,
-				F0D7BCA42C3FC8190034779C /* ColorPickerVC.swift */,
-				F0D7BCA62C3FC9920034779C /* DatePickerVC.swift */,
-				F0D7BCAC2C3FF19E0034779C /* SliderVC.swift */,
-				F0D7BCA82C3FEE030034779C /* StepperVC.swift */,
-				F0D7BCAE2C3FF5E20034779C /* TABVC.swift */,
-				F0D7BCB02C40015F0034779C /* PageVC.swift */,
-				F0C800D72C40EF750091EBFC /* OnAppearVC.swift */,
-				F0C800DB2C412BC00091EBFC /* TapGestureVC.swift */,
-				C5EBBFB32C462F4F00058D1F /* ViewModelVC.swift */,
-				C5EBBFB72C4648EB00058D1F /* EnvironmentalObjectVC.swift */,
-				C5EBBFB92C4648FA00058D1F /* AppStorageVC.swift */,
+				F0F179542C48D2B300288F0C /* SwiftUIConcepts */,
 				F09FC7952C297DD800D88866 /* Assets.xcassets */,
 				F09FC7972C297DD800D88866 /* Preview Content */,
 			);
@@ -266,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				F09FC7BC2C297E6200D88866 /* NetworkManager.swift */,
+				F0F1796B2C4925DD00288F0C /* APIURL.swift */,
 			);
 			path = NetworkManager;
 			sourceTree = "<group>";
@@ -276,6 +263,62 @@
 				F09FC7BF2C2986DD00D88866 /* ProductModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F0F179542C48D2B300288F0C /* SwiftUIConcepts */ = {
+			isa = PBXGroup;
+			children = (
+				F0D2842F2C3BFC790009CFB7 /* ForEachBootcamp.swift */,
+				F0D284312C3BFF150009CFB7 /* ScrollViewVC.swift */,
+				F09FC7932C297DD700D88866 /* ContentView.swift */,
+				F0D284352C3C04710009CFB7 /* GridViewVC.swift */,
+				F0D284372C3C09520009CFB7 /* SafeAreaVC.swift */,
+				F0D284392C3C0EE10009CFB7 /* ButtonVC.swift */,
+				F0F6A8312C3CFAD6002BD693 /* StateVC.swift */,
+				F0F6A8332C3D0845002BD693 /* ViewVC.swift */,
+				F01BAEE22C3D29D9009D6289 /* BindingVC.swift */,
+				F01BAEE42C3D341A009D6289 /* IfelseVC.swift */,
+				F01BAEE62C3D3CF0009D6289 /* AnimationVC.swift */,
+				F01BAEE92C3D541C009D6289 /* TransistionVC.swift */,
+				F01BAEEB2C3D5B7A009D6289 /* SheetVC.swift */,
+				F01BAEED2C3D60BF009D6289 /* SheetanimationVC.swift */,
+				F0D11F082C3E4EC7001C866E /* navigationVC.swift */,
+				F0D11F0A2C3E6406001C866E /* ListVC.swift */,
+				F0D11F0E2C3E749A001C866E /* AlertVC.swift */,
+				F0D11F122C3E7A00001C866E /* ActionSheetVC.swift */,
+				F0D11F162C3E903F001C866E /* ContextMenu.swift */,
+				F0D7BC9A2C3F99B50034779C /* TextfieldVC.swift */,
+				F0D7BC9C2C3FA2FE0034779C /* TextEditorVC.swift */,
+				F0D7BC9E2C3FB7D00034779C /* ToggleVC.swift */,
+				F0D7BCA02C3FBB1E0034779C /* PickerVC.swift */,
+				F0D7BCA42C3FC8190034779C /* ColorPickerVC.swift */,
+				F0D7BCA62C3FC9920034779C /* DatePickerVC.swift */,
+				F0D7BCAC2C3FF19E0034779C /* SliderVC.swift */,
+				F0D7BCA82C3FEE030034779C /* StepperVC.swift */,
+				F0D7BCAE2C3FF5E20034779C /* TABVC.swift */,
+				F0D7BCB02C40015F0034779C /* PageVC.swift */,
+				F0C800D72C40EF750091EBFC /* OnAppearVC.swift */,
+				F0C800DB2C412BC00091EBFC /* TapGestureVC.swift */,
+				C5EBBFB32C462F4F00058D1F /* ViewModelVC.swift */,
+				C5EBBFB72C4648EB00058D1F /* EnvironmentalObjectVC.swift */,
+				C5EBBFB92C4648FA00058D1F /* AppStorageVC.swift */,
+				F0DFEF892C477BF1008882DD /* FocusPointVC.swift */,
+			);
+			path = SwiftUIConcepts;
+			sourceTree = "<group>";
+		};
+		F0F179552C48D2D600288F0C /* SolidPrinciple */ = {
+			isa = PBXGroup;
+			children = (
+				F0F179562C48D67100288F0C /* CommentView.swift */,
+				F0F1795A2C48D8CE00288F0C /* CommentModel.swift */,
+				F0F179602C49025700288F0C /* UserModel.swift */,
+				F0F1795C2C48D8EE00288F0C /* CommentViewModel.swift */,
+				F0F1795E2C48FA3D00288F0C /* CommonService.swift */,
+				F0F179622C49100B00288F0C /* DataBaseHandler.swift */,
+				F0F179692C49111A00288F0C /* Comment.json */,
+			);
+			path = SolidPrinciple;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,6 +427,7 @@
 			files = (
 				F09FC7992C297DD800D88866 /* Preview Assets.xcassets in Resources */,
 				F09FC7962C297DD800D88866 /* Assets.xcassets in Resources */,
+				F0F1796A2C49111A00288F0C /* Comment.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +457,7 @@
 				F09FC7BD2C297E6200D88866 /* NetworkManager.swift in Sources */,
 				F0D7BCAD2C3FF19E0034779C /* SliderVC.swift in Sources */,
 				C5EBBFBA2C4648FA00058D1F /* AppStorageVC.swift in Sources */,
+				F0F1795D2C48D8EE00288F0C /* CommentViewModel.swift in Sources */,
 				F0D7BCA72C3FC9920034779C /* DatePickerVC.swift in Sources */,
 				F0D7BCA12C3FBB1E0034779C /* PickerVC.swift in Sources */,
 				F0D7BC9B2C3F99B50034779C /* TextfieldVC.swift in Sources */,
@@ -420,12 +465,14 @@
 				F0F6A8322C3CFAD6002BD693 /* StateVC.swift in Sources */,
 				F0D7BCAF2C3FF5E20034779C /* TABVC.swift in Sources */,
 				F0C800D82C40EF750091EBFC /* OnAppearVC.swift in Sources */,
+				F0DFEF8A2C477BF1008882DD /* FocusPointVC.swift in Sources */,
 				F09FC7922C297DD700D88866 /* SwiftUIConceptsApp.swift in Sources */,
 				F0D2843A2C3C0EE10009CFB7 /* ButtonVC.swift in Sources */,
 				F0D284302C3BFC790009CFB7 /* ForEachBootcamp.swift in Sources */,
 				F01BAEEA2C3D541C009D6289 /* TransistionVC.swift in Sources */,
 				F0D7BC9F2C3FB7D00034779C /* ToggleVC.swift in Sources */,
 				F0D284382C3C09520009CFB7 /* SafeAreaVC.swift in Sources */,
+				F0F1795F2C48FA3D00288F0C /* CommonService.swift in Sources */,
 				F01BAEEE2C3D60BF009D6289 /* SheetanimationVC.swift in Sources */,
 				F0D11F132C3E7A00001C866E /* ActionSheetVC.swift in Sources */,
 				C5EBBFB42C462F4F00058D1F /* ViewModelVC.swift in Sources */,
@@ -433,12 +480,17 @@
 				F0D11F0B2C3E6406001C866E /* ListVC.swift in Sources */,
 				F0F6A8342C3D0845002BD693 /* ViewVC.swift in Sources */,
 				F0D284362C3C04710009CFB7 /* GridViewVC.swift in Sources */,
+				F0F1796C2C4925DD00288F0C /* APIURL.swift in Sources */,
 				F0D11F0F2C3E749A001C866E /* AlertVC.swift in Sources */,
+				F0F179572C48D67100288F0C /* CommentView.swift in Sources */,
+				F0F1795B2C48D8CE00288F0C /* CommentModel.swift in Sources */,
 				F0C800DC2C412BC00091EBFC /* TapGestureVC.swift in Sources */,
 				F01BAEEC2C3D5B7A009D6289 /* SheetVC.swift in Sources */,
 				F01BAEE52C3D341A009D6289 /* IfelseVC.swift in Sources */,
 				C5EBBFB82C4648EB00058D1F /* EnvironmentalObjectVC.swift in Sources */,
+				F0F179632C49100B00288F0C /* DataBaseHandler.swift in Sources */,
 				F0D7BC9D2C3FA2FE0034779C /* TextEditorVC.swift in Sources */,
+				F0F179612C49025700288F0C /* UserModel.swift in Sources */,
 				F0D284322C3BFF150009CFB7 /* ScrollViewVC.swift in Sources */,
 				F01BAEE72C3D3CF0009D6289 /* AnimationVC.swift in Sources */,
 				F0D11F172C3E903F001C866E /* ContextMenu.swift in Sources */,
@@ -617,7 +669,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -649,7 +701,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

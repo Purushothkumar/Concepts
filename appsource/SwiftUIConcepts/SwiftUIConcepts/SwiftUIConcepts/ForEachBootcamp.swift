@@ -33,3 +33,6 @@ struct ForEachBootcamp: View {
 #Preview {
     ForEachBootcamp()
 }
+
+
+
