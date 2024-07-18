@@ -15,7 +15,10 @@ class CommonService{
         NetworkManager().fetchRequest(completion:completion)
     }
 
-    
+    func fetchUsers(completion: @escaping(Result<[UserModel], APIError>) -> Void){
+        // API Common Service
+        NetworkManager().fetchUserRequest(completion:completion)
+    }
 }
 
 

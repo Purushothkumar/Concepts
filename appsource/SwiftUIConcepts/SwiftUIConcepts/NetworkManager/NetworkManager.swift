@@ -32,7 +32,7 @@ class NetworkManager{
         aPIHandler.fetchData(url: url) { result in
             switch result {
             case .success(let data):
-                    print(data)
+                print(data)
                 // Reponse Handler
                 self.responseHandler.fetchModel(data: data) { decodedReponse in
                     switch decodedReponse {
@@ -43,7 +43,32 @@ class NetworkManager{
                     }
                 }
             case .failure(let error):
-                    print(error)
+                print(error)
+            }
+        }
+    }
+    func fetchUserRequest(completion: @escaping(Result<[UserModel], APIError>) -> Void){
+        // URL
+        guard let url = URL(string: APIURL.fetchUsers) else{
+            print("BadURLError")
+            return completion(.failure(.BadURLError))
+        }
+        // API Handler
+        aPIHandler.fetchUserData(url: url) { result in
+            switch result {
+            case .success(let data):
+                print(data)
+                // Reponse Handler
+                self.responseHandler.fetchUserModel(data: data) { decodedReponse in
+                    switch decodedReponse {
+                    case .success(let model):
+                        completion(.success(model))
+                    case .failure(let error):
+                        completion(.failure(error))
+                    }
+                }
+            case .failure(let error):
+                print(error)
             }
         }
     }
@@ -60,19 +85,39 @@ class APIHandler{
             completion(.success(data))
         }.resume()
     }
+    func fetchUserData(url:URL,completion: @escaping(Result<Data, APIError>) -> Void){
+        URLSession.shared.dataTask(with: url) { data, response, error in
+            guard let data = data, error == nil else{
+                print("NoResponseError")
+                return completion(.failure(.NoResponseError))
+            }
+            completion(.success(data))
+        }.resume()
+    }
 }
 // Response Handler
 class ResponseHandler{
     func fetchModel(data:Data, completion: @escaping(Result<[CommentModel], APIError>) -> Void){
-            // Response Handler
-            let commonResponse = try? JSONDecoder().decode([CommentModel].self, from: data)
-            if let newResponse = commonResponse {
-                return completion(.success(newResponse))
-            }
-            else{
-                print("DecodingError")
-                return completion(.failure(.DecodingError))
-            }
+        // Response Handler
+        let commonResponse = try? JSONDecoder().decode([CommentModel].self, from: data)
+        if let newResponse = commonResponse {
+            return completion(.success(newResponse))
+        }
+        else{
+            print("DecodingError")
+            return completion(.failure(.DecodingError))
+        }
+    }
+    func fetchUserModel(data:Data, completion: @escaping(Result<[UserModel], APIError>) -> Void){
+        // Response Handler
+        let commonResponse = try? JSONDecoder().decode([UserModel].self, from: data)
+        if let newResponse = commonResponse {
+            return completion(.success(newResponse))
+        }
+        else{
+            print("DecodingError")
+            return completion(.failure(.DecodingError))
+        }
     }
 }
 

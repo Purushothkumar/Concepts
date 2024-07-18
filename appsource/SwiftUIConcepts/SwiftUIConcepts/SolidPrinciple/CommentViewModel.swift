@@ -10,16 +10,33 @@ import Foundation
 class CommentViewModel: ObservableObject {
 
     @Published var comments = [CommentModel]()
+    @Published var users = [UserModel]()
 
     // Fetch Comments
     func fetchComments(){
-        CommonService().fetchRequest { result in
+        CommonService().fetchComments { result in
             DispatchQueue.main.async {
                 switch result{
                 case .success(let comments):
                     print("new data fetched")
                     //returns Comments data
                     self.comments = comments
+                case .failure(let error):
+                    print("Commonservice Error")
+                    print(error)
+                }
+            }
+        }
+    }
+    // Fetch Users
+    func fetchUsers(){
+        CommonService().fetchUsers { result in
+            DispatchQueue.main.async {
+                switch result{
+                case .success(let users):
+                    print("new data fetched")
+                    //returns Comments data
+                    self.users = users
                 case .failure(let error):
                     print("Commonservice Error")
                     print(error)
