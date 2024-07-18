@@ -10,10 +10,12 @@ import Foundation
 
 class CommonService{
 
-    func fetchRequest(completion: @escaping(Result<[CommentModel], APIError>) -> Void){
+    func fetchComments(completion: @escaping(Result<[CommentModel], APIError>) -> Void){
         // API Common Service
         NetworkManager().fetchRequest(completion:completion)
     }
+
+    
 }
 
 
