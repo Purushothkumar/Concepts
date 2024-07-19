@@ -69,6 +69,9 @@ class NetworkManager{
 //    }
 }
 
+
+
+
 // API Handler
 class APIHandler{
     func fetchData(url:URL,completion: @escaping(Result<Data, APIError>) -> Void){

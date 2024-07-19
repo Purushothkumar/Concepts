@@ -23,11 +23,11 @@ import Foundation
 //    func fetchComments(completion: @escaping(Result<[CommentModel], APIError>) -> Void)
 //}
 
-class DataBaseHandler: CommonServiceDelegate {
-    func fetchUsers(completion: @escaping (Result<[UserModel], APIError>) -> Void) {
-        
-    }
-    
+class DataBaseHandler: CommentsDelegate {
+//    func fetchUsers(completion: @escaping (Result<[UserModel], APIError>) -> Void) {
+//        
+//    }
+//    
     func fetchComments(completion: @escaping (Result<[CommentModel], APIError>) -> Void) {
 
         guard let url = Bundle.main.url(forResource: "Comment", withExtension: "json"),

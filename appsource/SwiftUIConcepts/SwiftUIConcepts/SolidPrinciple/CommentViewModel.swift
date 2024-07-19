@@ -17,9 +17,9 @@ class CommentViewModel: ObservableObject {
 //    var isConnected : Bool?
 
     var serviceHandler: CommonServiceDelegate
-    var databaseHandler: CommonServiceDelegate
+    var databaseHandler: CommentsDelegate
 
-    init(serviceHandler: CommonServiceDelegate = CommonService(), databaseHandler: CommonServiceDelegate = DataBaseHandler()){
+    init(serviceHandler: CommonServiceDelegate = CommonService(), databaseHandler: CommentsDelegate = DataBaseHandler()){
         self.serviceHandler = serviceHandler
         self.databaseHandler = databaseHandler
     }

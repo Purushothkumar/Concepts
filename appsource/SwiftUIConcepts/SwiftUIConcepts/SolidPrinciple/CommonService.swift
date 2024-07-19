@@ -8,11 +8,16 @@
 import Foundation
 
 
-protocol CommonServiceDelegate{
-    func fetchComments(completion: @escaping(Result<[CommentModel], APIError>) -> Void)
-    func fetchUsers(completion: @escaping(Result<[UserModel], APIError>) -> Void)
+protocol CommonServiceDelegate: CommentsDelegate, UsersDelegate{
 }
 
+protocol CommentsDelegate{
+    func fetchComments(completion: @escaping(Result<[CommentModel], APIError>) -> Void)
+}
+
+protocol UsersDelegate{
+    func fetchUsers(completion: @escaping(Result<[UserModel], APIError>) -> Void)
+}
 
 class CommonService: CommonServiceDelegate{
 
