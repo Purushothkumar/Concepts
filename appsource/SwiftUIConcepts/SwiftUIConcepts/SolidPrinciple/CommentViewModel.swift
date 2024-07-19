@@ -6,27 +6,72 @@
 //
 
 import Foundation
+import SwiftUI
 
 class CommentViewModel: ObservableObject {
 
     @Published var comments = [CommentModel]()
     @Published var users = [UserModel]()
+    @AppStorage("isConnected") var isConnected: Bool?
+
+//    var isConnected : Bool?
+
+    var serviceHandler: CommonServiceDelegate
+    var databaseHandler: CommonServiceDelegate
+
+    init(serviceHandler: CommonServiceDelegate = CommonService(), databaseHandler: CommonServiceDelegate = DataBaseHandler()){
+        self.serviceHandler = serviceHandler
+        self.databaseHandler = databaseHandler
+    }
+
+    private func toggleIsConnected() -> Bool {
+        if let isConnected = isConnected {
+            self.isConnected = !isConnected
+        } else {
+            self.isConnected = true
+        }
+        return self.isConnected ?? false
+    }
+
+//    private func toggleIsConnected() -> Bool {
+//        return isConnected ?? false
+//    }
+
 
     // Fetch Comments
     func fetchComments(){
-        CommonService().fetchComments { result in
-            DispatchQueue.main.async {
-                switch result{
-                case .success(let comments):
-                    print("new data fetched")
-                    //returns Comments data
-                    self.comments = comments
-                case .failure(let error):
-                    print("Commonservice Error")
-                    print(error)
+        if toggleIsConnected(){
+            serviceHandler.fetchComments { result in
+                DispatchQueue.main.async {
+                    switch result{
+                    case .success(let comments):
+                        print("new data fetched")
+                        //returns Comments data
+                        self.comments = comments
+                    case .failure(let error):
+                        print("Commonservice Error")
+                        print(error)
+                    }
                 }
             }
         }
+        else{
+            databaseHandler.fetchComments { result in
+                DispatchQueue.main.async {
+                    switch result{
+                    case .success(let comments):
+                        print("new data fetched")
+                        //returns Comments data
+                        self.comments = comments
+                    case .failure(let error):
+                        print("Commonservice Error")
+                        print(error)
+                    }
+                }
+            }
+
+        }
+
     }
     // Fetch Users
     func fetchUsers(){

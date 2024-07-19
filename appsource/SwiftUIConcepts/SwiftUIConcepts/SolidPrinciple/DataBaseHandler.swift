@@ -18,3 +18,24 @@ import Foundation
 //        completion(.success(model))
 //    }
 //}
+
+//protocol DataBaseHandlerDelegate{
+//    func fetchComments(completion: @escaping(Result<[CommentModel], APIError>) -> Void)
+//}
+
+class DataBaseHandler: CommonServiceDelegate {
+    func fetchUsers(completion: @escaping (Result<[UserModel], APIError>) -> Void) {
+        
+    }
+    
+    func fetchComments(completion: @escaping (Result<[CommentModel], APIError>) -> Void) {
+
+        guard let url = Bundle.main.url(forResource: "Comment", withExtension: "json"),
+              let data = try? Data(contentsOf: url),
+              let model = try? JSONDecoder().decode([CommentModel].self, from: data) else{
+            return completion(.failure(.DecodingError))
+        }
+        completion(.success(model))
+    }
+
+}

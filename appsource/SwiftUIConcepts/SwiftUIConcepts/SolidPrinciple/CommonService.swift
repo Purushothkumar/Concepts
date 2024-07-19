@@ -8,10 +8,15 @@
 import Foundation
 
 
-class CommonService{
+protocol CommonServiceDelegate{
+    func fetchComments(completion: @escaping(Result<[CommentModel], APIError>) -> Void)
+    func fetchUsers(completion: @escaping(Result<[UserModel], APIError>) -> Void)
+}
+
+
+class CommonService: CommonServiceDelegate{
 
     func fetchComments(completion: @escaping(Result<[CommentModel], APIError>) -> Void){
-
         // URL
         guard let url = URL(string: APIURL.fetchComments) else{
             print("BadURLError")
