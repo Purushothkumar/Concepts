@@ -15,9 +15,9 @@ enum APIError: Error{
 }
 
 class NetworkManager{
-    let aPIHandler: APIHandler
-    let responseHandler: ResponseHandler
-    init(aPIHandler: APIHandler = APIHandler(), responseHandler: ResponseHandler = ResponseHandler()) {
+    let aPIHandler: APIHandlerDelegate
+    let responseHandler: ResponseHandlerDelegate
+    init(aPIHandler: APIHandlerDelegate = APIHandler(), responseHandler: ResponseHandlerDelegate = ResponseHandler()) {
         self.aPIHandler = aPIHandler
         self.responseHandler = responseHandler
     }
@@ -69,11 +69,13 @@ class NetworkManager{
 //    }
 }
 
-
+protocol APIHandlerDelegate{
+    func fetchData(url:URL,completion: @escaping(Result<Data, APIError>) -> Void)
+}
 
 
 // API Handler
-class APIHandler{
+class APIHandler: APIHandlerDelegate{
     func fetchData(url:URL,completion: @escaping(Result<Data, APIError>) -> Void){
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard let data = data, error == nil else{
@@ -93,8 +95,13 @@ class APIHandler{
 //        }.resume()
 //    }
 }
+
+protocol ResponseHandlerDelegate{
+    func fetchModel<T:Codable>(type:T.Type,data:Data, completion: @escaping(Result<T, APIError>) -> Void)
+}
+
 // Response Handler
-class ResponseHandler{
+class ResponseHandler: ResponseHandlerDelegate{
     func fetchModel<T:Codable>(type:T.Type,data:Data, completion: @escaping(Result<T, APIError>) -> Void){
         // Response Handler
         let commonResponse = try? JSONDecoder().decode(T.self, from: data)
