@@ -25,6 +25,12 @@
 		F09FC7AF2C297DD800D88866 /* SwiftUIConceptsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FC7AE2C297DD800D88866 /* SwiftUIConceptsUITestsLaunchTests.swift */; };
 		F09FC7BD2C297E6200D88866 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FC7BC2C297E6200D88866 /* NetworkManager.swift */; };
 		F09FC7C02C2986DD00D88866 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09FC7BF2C2986DD00D88866 /* ProductModel.swift */; };
+		F0B6F4072C4E7BE80021AEB8 /* NotificationWidgetViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6F4042C4E7BE80021AEB8 /* NotificationWidgetViewModelTests.swift */; };
+		F0B6F4082C4E7BE80021AEB8 /* NotificationWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6F4052C4E7BE80021AEB8 /* NotificationWidgetView.swift */; };
+		F0B6F4092C4E7BE80021AEB8 /* NotificationWidgetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6F4062C4E7BE80021AEB8 /* NotificationWidgetViewModel.swift */; };
+		F0B6F40D2C4E7D450021AEB8 /* MockCommonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6F40C2C4E7D450021AEB8 /* MockCommonViewModel.swift */; };
+		F0B6F4102C4E7ECC0021AEB8 /* MockCommonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6F40F2C4E7ECC0021AEB8 /* MockCommonService.swift */; };
+		F0B6F4122C4E86E40021AEB8 /* MockDatabaseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0B6F4112C4E86E40021AEB8 /* MockDatabaseHandler.swift */; };
 		F0C800D82C40EF750091EBFC /* OnAppearVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C800D72C40EF750091EBFC /* OnAppearVC.swift */; };
 		F0C800DC2C412BC00091EBFC /* TapGestureVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C800DB2C412BC00091EBFC /* TapGestureVC.swift */; };
 		F0D11F092C3E4EC7001C866E /* navigationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D11F082C3E4EC7001C866E /* navigationVC.swift */; };
@@ -102,6 +108,13 @@
 		F09FC7AE2C297DD800D88866 /* SwiftUIConceptsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIConceptsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F09FC7BC2C297E6200D88866 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		F09FC7BF2C2986DD00D88866 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		F0B6F3FC2C4E377C0021AEB8 /* KVOKVC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = KVOKVC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F0B6F4042C4E7BE80021AEB8 /* NotificationWidgetViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationWidgetViewModelTests.swift; sourceTree = "<group>"; };
+		F0B6F4052C4E7BE80021AEB8 /* NotificationWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationWidgetView.swift; sourceTree = "<group>"; };
+		F0B6F4062C4E7BE80021AEB8 /* NotificationWidgetViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationWidgetViewModel.swift; sourceTree = "<group>"; };
+		F0B6F40C2C4E7D450021AEB8 /* MockCommonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCommonViewModel.swift; sourceTree = "<group>"; };
+		F0B6F40F2C4E7ECC0021AEB8 /* MockCommonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCommonService.swift; sourceTree = "<group>"; };
+		F0B6F4112C4E86E40021AEB8 /* MockDatabaseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabaseHandler.swift; sourceTree = "<group>"; };
 		F0C800D72C40EF750091EBFC /* OnAppearVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnAppearVC.swift; sourceTree = "<group>"; };
 		F0C800DB2C412BC00091EBFC /* TapGestureVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapGestureVC.swift; sourceTree = "<group>"; };
 		F0D11F082C3E4EC7001C866E /* navigationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = navigationVC.swift; sourceTree = "<group>"; };
@@ -167,6 +180,7 @@
 			children = (
 				F038C8092C33E87600A7480A /* basic */,
 				F038C8082C33E86500A7480A /* Concurrancy */,
+				F0B6F3FC2C4E377C0021AEB8 /* KVOKVC.playground */,
 			);
 			path = playground;
 			sourceTree = "<group>";
@@ -210,6 +224,7 @@
 		F09FC7902C297DD700D88866 /* SwiftUIConcepts */ = {
 			isa = PBXGroup;
 			children = (
+				F0B6F4032C4E7B0D0021AEB8 /* TestcaseKalai */,
 				F0F179552C48D2D600288F0C /* SolidPrinciple */,
 				F08B88132C2EE15300E1986D /* SwiftUIConcepts.entitlements */,
 				F02634B22C2BD79B006CFEC8 /* playground */,
@@ -235,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				F09FC7A22C297DD800D88866 /* SwiftUIConceptsTests.swift */,
+				F0B6F40E2C4E7EAE0021AEB8 /* APITesting */,
 			);
 			path = SwiftUIConceptsTests;
 			sourceTree = "<group>";
@@ -263,6 +279,26 @@
 				F09FC7BF2C2986DD00D88866 /* ProductModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F0B6F4032C4E7B0D0021AEB8 /* TestcaseKalai */ = {
+			isa = PBXGroup;
+			children = (
+				F0B6F4052C4E7BE80021AEB8 /* NotificationWidgetView.swift */,
+				F0B6F4062C4E7BE80021AEB8 /* NotificationWidgetViewModel.swift */,
+				F0B6F4042C4E7BE80021AEB8 /* NotificationWidgetViewModelTests.swift */,
+			);
+			path = TestcaseKalai;
+			sourceTree = "<group>";
+		};
+		F0B6F40E2C4E7EAE0021AEB8 /* APITesting */ = {
+			isa = PBXGroup;
+			children = (
+				F0B6F40C2C4E7D450021AEB8 /* MockCommonViewModel.swift */,
+				F0B6F40F2C4E7ECC0021AEB8 /* MockCommonService.swift */,
+				F0B6F4112C4E86E40021AEB8 /* MockDatabaseHandler.swift */,
+			);
+			path = APITesting;
 			sourceTree = "<group>";
 		};
 		F0F179542C48D2B300288F0C /* SwiftUIConcepts */ = {
@@ -461,6 +497,7 @@
 				F0D7BCA72C3FC9920034779C /* DatePickerVC.swift in Sources */,
 				F0D7BCA12C3FBB1E0034779C /* PickerVC.swift in Sources */,
 				F0D7BC9B2C3F99B50034779C /* TextfieldVC.swift in Sources */,
+				F0B6F4092C4E7BE80021AEB8 /* NotificationWidgetViewModel.swift in Sources */,
 				F09FC7942C297DD700D88866 /* ContentView.swift in Sources */,
 				F0F6A8322C3CFAD6002BD693 /* StateVC.swift in Sources */,
 				F0D7BCAF2C3FF5E20034779C /* TABVC.swift in Sources */,
@@ -484,6 +521,7 @@
 				F0D11F0F2C3E749A001C866E /* AlertVC.swift in Sources */,
 				F0F179572C48D67100288F0C /* CommentView.swift in Sources */,
 				F0F1795B2C48D8CE00288F0C /* CommentModel.swift in Sources */,
+				F0B6F4082C4E7BE80021AEB8 /* NotificationWidgetView.swift in Sources */,
 				F0C800DC2C412BC00091EBFC /* TapGestureVC.swift in Sources */,
 				F01BAEEC2C3D5B7A009D6289 /* SheetVC.swift in Sources */,
 				F01BAEE52C3D341A009D6289 /* IfelseVC.swift in Sources */,
@@ -497,6 +535,7 @@
 				F0D7BCB12C40015F0034779C /* PageVC.swift in Sources */,
 				F09FC7C02C2986DD00D88866 /* ProductModel.swift in Sources */,
 				F01BAEE32C3D29D9009D6289 /* BindingVC.swift in Sources */,
+				F0B6F4072C4E7BE80021AEB8 /* NotificationWidgetViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,7 +543,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0B6F4102C4E7ECC0021AEB8 /* MockCommonService.swift in Sources */,
+				F0B6F4122C4E86E40021AEB8 /* MockDatabaseHandler.swift in Sources */,
 				F09FC7A32C297DD800D88866 /* SwiftUIConceptsTests.swift in Sources */,
+				F0B6F40D2C4E7D450021AEB8 /* MockCommonViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

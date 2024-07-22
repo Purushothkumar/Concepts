@@ -37,5 +37,4 @@ class DataBaseHandler: CommentsDelegate {
         }
         completion(.success(model))
     }
-
 }
