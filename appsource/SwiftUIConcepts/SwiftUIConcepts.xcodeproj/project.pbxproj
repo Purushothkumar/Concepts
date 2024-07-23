@@ -138,6 +138,7 @@
 		F0D7BCAE2C3FF5E20034779C /* TABVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TABVC.swift; sourceTree = "<group>"; };
 		F0D7BCB02C40015F0034779C /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		F0DFEF892C477BF1008882DD /* FocusPointVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusPointVC.swift; sourceTree = "<group>"; };
+		F0E108D92C4F66F20099B06A /* StrongWeakUnOwned.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StrongWeakUnOwned.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F0F179562C48D67100288F0C /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		F0F1795A2C48D8CE00288F0C /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		F0F1795C2C48D8EE00288F0C /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
@@ -181,6 +182,7 @@
 				F038C8092C33E87600A7480A /* basic */,
 				F038C8082C33E86500A7480A /* Concurrancy */,
 				F0B6F3FC2C4E377C0021AEB8 /* KVOKVC.playground */,
+				F0E108D92C4F66F20099B06A /* StrongWeakUnOwned.playground */,
 			);
 			path = playground;
 			sourceTree = "<group>";
