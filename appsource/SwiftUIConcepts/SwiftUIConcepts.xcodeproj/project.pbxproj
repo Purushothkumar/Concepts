@@ -139,7 +139,9 @@
 		F0D7BCB02C40015F0034779C /* PageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageVC.swift; sourceTree = "<group>"; };
 		F0DFEF892C477BF1008882DD /* FocusPointVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusPointVC.swift; sourceTree = "<group>"; };
 		F0E108D92C4F66F20099B06A /* StrongWeakUnOwned.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StrongWeakUnOwned.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		F0E108DA2C4F72BA0099B06A /* Empty.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Empty.md; sourceTree = "<group>"; };
+		F0E108DA2C4F72BA0099B06A /* SolidPrinciple.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SolidPrinciple.md; sourceTree = "<group>"; };
+		F0E108DB2C4F89150099B06A /* Defer.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Defer.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		F0E108DE2C4F8CD70099B06A /* Closure.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Closure.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		F0F179562C48D67100288F0C /* CommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentView.swift; sourceTree = "<group>"; };
 		F0F1795A2C48D8CE00288F0C /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
 		F0F1795C2C48D8EE00288F0C /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
@@ -184,6 +186,8 @@
 				F038C8082C33E86500A7480A /* Concurrancy */,
 				F0B6F3FC2C4E377C0021AEB8 /* KVOKVC.playground */,
 				F0E108D92C4F66F20099B06A /* StrongWeakUnOwned.playground */,
+				F0E108DB2C4F89150099B06A /* Defer.playground */,
+				F0E108DE2C4F8CD70099B06A /* Closure.playground */,
 			);
 			path = playground;
 			sourceTree = "<group>";
@@ -356,7 +360,7 @@
 				F0F1795E2C48FA3D00288F0C /* CommonService.swift */,
 				F0F179622C49100B00288F0C /* DataBaseHandler.swift */,
 				F0F179692C49111A00288F0C /* Comment.json */,
-				F0E108DA2C4F72BA0099B06A /* Empty.md */,
+				F0E108DA2C4F72BA0099B06A /* SolidPrinciple.md */,
 			);
 			path = SolidPrinciple;
 			sourceTree = "<group>";
