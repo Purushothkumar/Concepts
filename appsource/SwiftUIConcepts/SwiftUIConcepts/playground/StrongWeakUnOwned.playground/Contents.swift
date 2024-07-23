@@ -67,3 +67,45 @@ car?.vechicle = vechicle // circular reference
 
 vechicle = nil // deallocated
 car = nil // deallocated
+
+
+
+// MARK: Circular Refrence
+
+/*
+ A circular reference type occurs when two or more types refer to each other directly or indirectly, creating a loop. This can happen with classes, structs, or other data types. Circular references can lead to memory leaks or crashes if not handled properly, especially in languages that use reference counting for memory management, like Swift.
+ */
+
+/*
+ To break the circular reference and avoid memory leaks, you can use weak or unowned references:
+
+ Weak reference: A weak reference does not increase the reference count of the object it refers to. It's typically used when the reference may become nil during the object's lifetime.
+ Unowned reference: An unowned reference does not increase the reference count of the object it refers to and is used when the reference is not expected to become nil before the referencing object is deallocated.
+
+ */
+
+class Person {
+    var pet: Pet?
+    deinit {
+        print("Person deinitialized")
+    }
+}
+
+class Pet {
+    var owner: Person?
+    deinit {
+        print("Pet deinitialized")
+    }
+}
+
+var john: Person? = Person()
+var fido: Pet? = Pet()
+
+john?.pet = fido
+fido?.owner = john
+
+//john = nil
+//fido = nil
+
+
+
