@@ -1,6 +1,5 @@
 import UIKit
 
-
 // MARK: https://www.youtube.com/watch?v=_RQwkE_O7VQ&list=PLV7VzbWXa60EiWHqcH_pNjuVYxW0JpcET&index=4
 
 class ClosureSample{

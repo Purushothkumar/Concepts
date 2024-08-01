@@ -88,6 +88,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5088DB92C5AA04D0033281A /* Singleton.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Singleton.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		C5EBBFB32C462F4F00058D1F /* ViewModelVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelVC.swift; sourceTree = "<group>"; };
 		C5EBBFB72C4648EB00058D1F /* EnvironmentalObjectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentalObjectVC.swift; sourceTree = "<group>"; };
 		C5EBBFB92C4648FA00058D1F /* AppStorageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageVC.swift; sourceTree = "<group>"; };
@@ -188,9 +189,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C5088DB62C5A9AED0033281A /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				C5088DB92C5AA04D0033281A /* Singleton.playground */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		F02634B22C2BD79B006CFEC8 /* playground */ = {
 			isa = PBXGroup;
 			children = (
+				C5088DB62C5A9AED0033281A /* Singleton */,
 				F038C8092C33E87600A7480A /* basic */,
 				F038C8082C33E86500A7480A /* Concurrancy */,
 				F0B6F3FC2C4E377C0021AEB8 /* KVOKVC.playground */,
