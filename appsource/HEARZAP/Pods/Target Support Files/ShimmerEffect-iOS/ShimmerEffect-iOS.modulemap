@@ -1,6 +1,0 @@
-framework module ShimmerEffect_iOS {
-  umbrella header "ShimmerEffect-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
